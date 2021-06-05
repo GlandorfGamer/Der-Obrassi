@@ -20,7 +20,7 @@ module.exports={
         let person = message.guild.member(message.mentions.users.first() || message.guild.members.cache.get(args[1]));
         if(!person) return message.reply("Couldn't find that member");
 
-        let mainrole = message.guild.roles.cache.find(role => role.name === "Member");
+        let mainrole = message.guild.roles.cache.find(role => role.name === "🥶Krassi🥶");
         let muterole = message.guild.roles.cache.find(role => role.name === "Muted");
 
         if(!muterole) return message.reply("Couln't find the mute role");
