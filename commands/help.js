@@ -25,7 +25,6 @@ module.exports={
         .addField("Imagine", "ob!imagine (Something to imagine)")
         .addField("8ball", "ob!8ball (Ask the 8ball a question)")
         .addField("Gayrate", "ob!gayrate (Look how gay you are)")
-        .addField("Spoiler", "ob!spoiler (What you wan't the bot to spoiler)")
         .addField("Suggest", "ob!suggest (You can ask the server something)")
 
         .setColor('FADF2E')
