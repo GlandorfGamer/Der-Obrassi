@@ -21,7 +21,7 @@ module.exports={
         .setTitle("Fun Commands")
         .addField("Say", "ob!say (what you wan't the bot to say)")
         .addField("Spoiler", "ob!spoiler (what you wan't the bot to spoiler)")
-        .addField("Hack", "ob!spoiler (what you wan't the bot to spoiler)")
+        .addField("Hack", "ob!hack (what you wan't the bot to spoiler)")
         .addField("Imagine", "ob!imagine (Something to imagine)")
         .addField("8ball", "ob!8ball (Ask the 8ball a question)")
         .addField("Gayrate", "ob!gayrate (Look how gay you are)")
