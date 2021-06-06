@@ -42,7 +42,7 @@ module.exports={
     
             .setColor('FADF2E')
     
-            message.channel.send(funembed);
+            message.channel.send(adminembed);
 
         }
     }
