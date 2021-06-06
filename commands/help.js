@@ -19,14 +19,14 @@ module.exports={
 
             const funembed = new Discord.MessageEmbed()
         .setTitle("Fun Commands")
-        .addField("Say", "ob!say (what you wan't the bot to say)")
-        .addField("Spoiler", "ob!spoiler (what you wan't the bot to spoiler)")
-        .addField("Hack", "ob!hack (what you wan't the bot to spoiler)")
+        .addField("Say", "ob!say (What you wan't the bot to say)")
+        .addField("Spoiler", "ob!spoiler (What you wan't the bot to spoiler)")
+        .addField("Hack", "ob!hack (Someone you wan't to hack)")
         .addField("Imagine", "ob!imagine (Something to imagine)")
         .addField("8ball", "ob!8ball (Ask the 8ball a question)")
         .addField("Gayrate", "ob!gayrate (Look how gay you are)")
-        .addField("Spoiler", "ob!spoiler (what you wan't the bot to spoiler)")
-        .addField("Suggest", "ob!suggest (you can ask the server something)")
+        .addField("Spoiler", "ob!spoiler (What you wan't the bot to spoiler)")
+        .addField("Suggest", "ob!suggest (You can ask the server something)")
 
         .setColor('FADF2E')
 
