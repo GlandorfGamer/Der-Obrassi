@@ -13,9 +13,7 @@ module.exports={
 
         message.channel.send(embed);
 
-        }
-
-        if(args[0] == "fun"){
+        }else if(args[0] == "fun"){
 
             const funembed = new Discord.MessageEmbed()
         .setTitle("Fun Commands")
