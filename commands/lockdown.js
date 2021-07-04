@@ -12,11 +12,11 @@ module.exports={
         const role = message.guild.roles.cache.find(r => r.id === rolefind);
         if(!role) return message.channel.send("Please give a valid role id!");
         let embed = new Discord.MessageEmbed()
-        .setTitle("Channel Unlocked!")
-        .setDescription(`This channel has been Unlocked by ${message.author.tag}`)
+        .setTitle("Channel Locked!")
+        .setDescription(`This channel has been Locked by ${message.author.tag}`)
         .setTimestamp();
         channel.updateOverwrite(role, {
-            SEND_MESSAGES: true
+            SEND_MESSAGES: false
         });
         await channel.send(embed)
         }
