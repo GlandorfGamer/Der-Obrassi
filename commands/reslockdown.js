@@ -17,7 +17,7 @@ module.exports={
         .setDescription(`This channel has been Unlocked by ${message.author.tag}`)
         .setTimestamp();
         channel.updateOverwrite(role, {
-            SEND_MESSAGES: false
+            SEND_MESSAGES: true
         });
         await channel.send(embed)
         
