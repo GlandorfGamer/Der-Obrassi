@@ -7,10 +7,10 @@ module.exports={
         if(!message.member.hasPermission("MANAGE_CHANNELS")) return message.reply("You don't have the permissions for that!");
         const channel = message.mentions.channels.first();
         if(!channel) return message.channel.send("This channel does not exist!");
-        const rolefind = args.slice(1).join(" ");
+        const rolefind = args.slice(2).join(" ");
         const role = message.guild.roles.cache.find(r => r.id === rolefind);
         if(!role) return message.channel.send("Please give a valid role id!");
-        const messagesent = args.slice(2).join(" ");
+        const messagesent = args.slice(3).join(" ");
         if(!messagesent) return message.channel.send("Please specify a reason to put this channel on a lockdown!")
         let embed = new Discord.MessageEmbed()
         .setTitle("Channel Locked!")
