@@ -1,7 +1,7 @@
 module.exports={
     name: "lockdown",
     description: "Puts a channel on a lockdown",
-    async execute(message, args, Discord)
+    async execute(message, args, Discord){
         
         
         if(args[0]=="reset"){
