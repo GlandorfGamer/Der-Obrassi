@@ -9,7 +9,7 @@ module.exports={
         const rolefind = args.slice(1).join(" ");
         const role = message.guild.roles.cache.find(r => r.id === rolefind);
         if(!role) return message.channel.send("Please give a valid role id!");
-        let embed = new MessageEmbed()
+        let embed = new Discord.MessageEmbed()
         .setImage("Channel Locked!")
         .setDescription(`This channel has been locked by ${message.author.tag}`)
         .setTimestamp();
