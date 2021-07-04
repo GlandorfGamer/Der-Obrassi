@@ -32,7 +32,6 @@ module.exports={
         if(!role) return message.channel.send("Please give a valid role id!");
         let embed = new Discord.MessageEmbed()
         .setTitle("Channel Locked!")
-        .setField(messagesent)
         .setDescription(`This channel has been locked by ${message.author.tag}`)
         .setTimestamp();
         channel.updateOverwrite(role, {
