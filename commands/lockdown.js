@@ -1,5 +1,5 @@
 module.exports={
-    name: "reslockdown",
+    name: "lockdown",
     description: "Puts a channel on a lockdown",
     async execute(message, args, Discord)
         
