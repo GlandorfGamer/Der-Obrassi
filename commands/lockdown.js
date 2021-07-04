@@ -1,24 +1,7 @@
 module.exports={
-    name: "lockdown",
+    name: "reslockdown",
     description: "Puts a channel on a lockdown",
-    async execute(message, args, Discord){
-
-        if(!args[0]){
-        if(!message.member.hasPermission("MANAGE_CHANNELS")) return message.reply("You don't have the permissions for that!");
-        const channel = message.mentions.channels.first();
-        if(!channel) return message.channel.send("This channel does not exist!");
-        const roletofind = args.slice(1).join(" ");
-        const role = message.guild.roles.cache.find(r => r.id === roletofind);
-        if(!role) return message.channel.send("Please give a valid role id!");
-        let embed = new Discord.MessageEmbed()
-        .setTitle("Channel Locked!")
-        .setDescription(`This channel has been Locked by ${message.author.tag}`)
-        .setTimestamp();
-        channel.updateOverwrite(role, {
-            SEND_MESSAGES: false
-        });
-        await channel.send(embed)
-        }
+    async execute(message, args, Discord)
         
         
         if(args[0]=="reset"){
