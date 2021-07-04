@@ -26,9 +26,13 @@ module.exports={
         if(!message.member.hasPermission("MANAGE_CHANNELS")) return message.reply("You don't have the permissions for that!");
         const channel = message.mentions.channels.first();
         if(!channel) return message.channel.send("This channel does not exist!");
+            message.channel.send("test");
         const rolefind = args.slice(1).join(" ");
+            message.channel.send("test");
         const role = message.guild.roles.cache.find(r => r.id === rolefind);
+            message.channel.send("test");
         if(!role) return message.channel.send("Please give a valid role id!");
+            message.channel.send("test");
         let embed = new Discord.MessageEmbed()
         .setTitle("Channel Locked!")
         .setDescription(`This channel has been Locked by ${message.author.tag}`)
