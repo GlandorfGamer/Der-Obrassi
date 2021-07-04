@@ -78,6 +78,8 @@ client.on('message', message =>{
         client.commands.get('imagine').execute(message, args, Discord);
     }else if(command === 'reslockdown'){
         client.commands.get('reslockdown').execute(message, args, Discord);
+    }else if(command === 'lockdown'){
+        client.commands.get('lockdown').execute(message, args, Discord);
     }
 })
 
