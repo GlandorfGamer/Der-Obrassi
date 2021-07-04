@@ -1,7 +1,7 @@
 module.exports={
     name: "lockdown",
     description: "Puts a channel on a lockdown",
-    async execute(message, args){
+    async execute(message, args, Discord){
 
         if(!message.member.hasPermission("MANAGE_CHANNELS")) return message.reply("You don't have the permissions for that!");
         const channel = message.mentions.channels.first();
