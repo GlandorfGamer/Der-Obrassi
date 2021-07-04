@@ -30,7 +30,7 @@ module.exports={
         const rolefind = args.slice(1).join(" ");
         const role = message.guild.roles.cache.find(r => r.id === rolefind);
         if(!role) return message.channel.send("Please give a valid role id!");
-        const messagesent = args.slice(1).join(" ");
+        const messagesent = args.join(" ");
         let embed = new Discord.MessageEmbed()
         .setTitle("Channel Locked!")
         .setField(messagesent)
