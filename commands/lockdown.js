@@ -11,6 +11,9 @@ module.exports={
         const role = message.guild.roles.everyone;
       
       if(!args.length) return message.channel.send("Please specify a query");
-
+        
+        const query = args[0].toLowerCase();
+        
+        if(!['true', 'false'].includes(query)) return message.channel.send("The option you have stated is not valid!");
     }
 }
