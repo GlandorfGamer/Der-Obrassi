@@ -33,7 +33,7 @@ module.exports={
         const messagesent = args.slice(2).join(" ");
         let embed = new Discord.MessageEmbed()
         .setTitle("Channel Locked!")
-        .setField(messagesent);
+        .setField(messagesent)
         .setDescription(`This channel has been locked by ${message.author.tag}`)
         .setTimestamp();
         channel.updateOverwrite(role, {
